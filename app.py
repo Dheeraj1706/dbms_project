@@ -2278,6 +2278,9 @@ def health():
     """Health check endpoint"""
     return jsonify({"status": "ok", "message": "API is running"})
 
+@app.route("/")
+def home():
+    return "backend is running successfully"
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
