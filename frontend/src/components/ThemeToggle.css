@@ -1,0 +1,63 @@
+.theme-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+}
+
+[data-theme="bright"] .theme-toggle-wrap .theme-label {
+  color: #1e293b;
+}
+
+[data-theme="dark"] .theme-toggle-wrap .theme-label {
+  color: #e2e8f0;
+}
+
+.theme-toggle-btn {
+  width: 52px;
+  height: 26px;
+  border-radius: 13px;
+  border: 2px solid;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+[data-theme="bright"] .theme-toggle-btn {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+[data-theme="dark"] .theme-toggle-btn {
+  background: #334155;
+  border-color: #64748b;
+}
+
+.theme-toggle-slider {
+  position: absolute;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="bright"] .theme-toggle-slider {
+  left: 2px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+[data-theme="dark"] .theme-toggle-slider {
+  left: 28px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.02);
+}

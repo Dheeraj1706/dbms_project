@@ -1,0 +1,535 @@
+/* ============================================
+   BRIGHT MODE - Clean, clear, high contrast
+   ============================================ */
+
+[data-theme="bright"] {
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+}
+
+[data-theme="bright"] .dashboard-container {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .dashboard-content,
+[data-theme="bright"] .dashboard-content * {
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-theme="bright"] .main-content {
+  background: #f8fafc;
+}
+
+[data-theme="bright"] .dashboard-header {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="bright"] .dashboard-header h1 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+[data-theme="bright"] .dashboard-content h2 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+[data-theme="bright"] .stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .stat-card h3 {
+  color: #475569;
+  font-weight: 600;
+}
+
+[data-theme="bright"] .stat-card .value {
+  color: #0369a1;
+  font-weight: 700;
+}
+
+[data-theme="bright"] .card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .table {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .table thead {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+[data-theme="bright"] .table td {
+  color: #1e293b;
+}
+
+[data-theme="bright"] .table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+[data-theme="bright"] .input {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .input:focus {
+  border-color: #0ea5e9;
+}
+
+/* Admin: Courses - much brighter, very clear */
+[data-theme="bright"] .course-card,
+[data-theme="bright"] .course-card-hover-edit {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  color: #0f172a;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="bright"] .course-card:hover,
+[data-theme="bright"] .course-card-hover-edit:hover {
+  border-color: #0ea5e9;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.15);
+}
+
+[data-theme="bright"] .course-card h3,
+[data-theme="bright"] .course-card h4,
+[data-theme="bright"] .course-card-hover-edit h3 {
+  color: #0f172a !important;
+  font-weight: 700;
+}
+
+[data-theme="bright"] .course-card .course-meta,
+[data-theme="bright"] .course-card .course-level,
+[data-theme="bright"] .course-card .course-duration,
+[data-theme="bright"] .course-card .course-description {
+  color: #334155 !important;
+  font-weight: 500;
+}
+
+[data-theme="bright"] .courses-grid .course-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+[data-theme="bright"] p {
+  color: #334155;
+}
+
+/* ============================================
+   DARK MODE - Dark backgrounds, bright text
+   ============================================ */
+
+[data-theme="dark"] {
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+}
+
+[data-theme="dark"] .dashboard-container {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .dashboard-content,
+[data-theme="dark"] .dashboard-content * {
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-theme="dark"] select.input,
+[data-theme="dark"] .input select {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] select.input option {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .main-content {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .sidebar {
+  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  border-right: 1px solid #1e293b;
+}
+
+[data-theme="dark"] .sidebar a {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .sidebar a:hover {
+  color: #ffffff;
+  background: rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .dashboard-header {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-bottom: 1px solid #334155;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .dashboard-header h1 {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .dashboard-content {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .dashboard-content h2 {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .stat-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .stat-card h3 {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .stat-card .value {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .card h4 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .table {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .table thead {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .table td {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+  background: #334155;
+}
+
+[data-theme="dark"] .input {
+  background: #0f172a;
+  border: 2px solid #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .input:focus {
+  border-color: #38bdf8;
+}
+
+[data-theme="dark"] .input::placeholder {
+  color: #64748b;
+}
+
+/* Admin: Courses - Dark mode */
+[data-theme="dark"] .course-card,
+[data-theme="dark"] .course-card-hover-edit {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .course-card:hover,
+[data-theme="dark"] .course-card-hover-edit:hover {
+  border-color: #475569;
+  background: #334155;
+}
+
+[data-theme="dark"] .course-card h3,
+[data-theme="dark"] .course-card h4,
+[data-theme="dark"] .course-card-hover-edit h3 {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .course-card .course-meta,
+[data-theme="dark"] .course-card .course-level,
+[data-theme="dark"] .course-card .course-duration,
+[data-theme="dark"] .course-card .course-description {
+  color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] .courses-grid .course-card {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+[data-theme="dark"] p {
+  color: #cbd5e1;
+}
+
+/* Form labels */
+[data-theme="dark"] .form-group label {
+  color: #e2e8f0;
+}
+
+/* Dark mode: Personal info (student/instructor) – bright text */
+[data-theme="dark"] .profile-field label {
+  color: #94a3b8 !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .profile-field span {
+  color: #f1f5f9 !important;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .profile-view {
+  color: #e2e8f0;
+}
+
+/* Dark mode: Course level badges (Beginner, Advanced, etc.) – bright & visible */
+[data-theme="dark"] .course-level,
+[data-theme="dark"] .analyst-level {
+  background: #38bdf8 !important;
+  color: #0f172a !important;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* Dark mode: Status badges */
+[data-theme="dark"] .status-badge {
+  font-weight: 600;
+}
+
+[data-theme="dark"] .status-badge.status-ongoing {
+  background: #fbbf24;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .status-badge.status-completed {
+  background: #34d399;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .status-badge.status-dropped {
+  background: #f87171;
+  color: #0f172a;
+}
+
+/* Student course view */
+[data-theme="dark"] .student-course-header {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+[data-theme="dark"] .student-course-section h3 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .student-module-block {
+  background: #1e293b;
+  border-left-color: #38bdf8;
+}
+
+[data-theme="dark"] .student-content-item {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .student-assignment-block {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .insight-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .loading {
+  background: #0f172a;
+  color: #94a3b8;
+}
+
+/* Login page themes */
+[data-theme="dark"] .auth-container {
+  background: #0f172a;
+}
+
+[data-theme="dark"] .auth-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+[data-theme="dark"] .auth-header h1 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .auth-header p {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .form-group label {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .auth-form .input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+/* Admin courses - extra brightness in bright mode */
+[data-theme="bright"] .courses-grid .course-card-hover-edit,
+[data-theme="bright"] .courses-grid .course-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .courses-grid .course-card h3,
+[data-theme="bright"] .courses-grid .course-card-hover-edit h3 {
+  color: #0f172a !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+[data-theme="bright"] .courses-grid .course-card .course-meta {
+  color: #334155 !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ============================================
+   ANALYST BRIGHT MODE - White background
+   ============================================ */
+
+[data-theme="bright"] .analyst-dashboard .analyst-sidebar {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+[data-theme="bright"] .analyst-dashboard .main-content,
+[data-theme="bright"] .analyst-dashboard .analyst-content {
+  background: #ffffff !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-header {
+  background: #ffffff !important;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-header h1 {
+  color: #0f172a !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-content h2 {
+  color: #0f172a !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-stat {
+  background: #f8fafc !important;
+  border: 2px solid #e2e8f0;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-stat h3 {
+  color: #475569 !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-stat .value {
+  color: #0369a1 !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-table-wrap {
+  background: #ffffff !important;
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-table thead {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-table td {
+  color: #1e293b !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-card {
+  background: #ffffff !important;
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-card h3 {
+  color: #0f172a !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-post-form {
+  background: #f8fafc !important;
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-input {
+  background: #ffffff !important;
+  border: 2px solid #e2e8f0;
+  color: #0f172a;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-preview {
+  background: #ffffff !important;
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-posted-list {
+  background: #f8fafc !important;
+  border: 2px solid #e2e8f0;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-posted-list h3 {
+  color: #0f172a !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-posted-list li {
+  color: #475569 !important;
+}
+
+[data-theme="bright"] .analyst-dashboard .analyst-hint {
+  color: #475569 !important;
+}
+
+[data-theme="bright"] .analyst-loading {
+  background: #f8fafc;
+  color: #475569;
+}
+[data-theme="dark"] .searchable-list-item strong {
+  color: #0f172a !important;   /* sky blue accent */
+  font-weight: 700;
+}

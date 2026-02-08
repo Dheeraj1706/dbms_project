@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title }}</title>
+
+<link rel="stylesheet" href="/static/styles.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+<div class="sidebar">
+<h2>MOOC</h2>
+
+<a href="/dashboard">Dashboard</a>
+
+{% if role == "student" %}
+<a href="/courses">Browse Courses</a>
+<a href="/mycourses">My Courses</a>
+{% endif %}
+
+{% if role == "instructor" %}
+<a href="/teach_courses">Courses I Teach</a>
+{% endif %}
+
+{% if role == "administrator" %}
+<a href="/manage_students">Manage Students</a>
+{% endif %}
+
+{% if role == "data_analyst" %}
+<a href="/stats">Statistics</a>
+{% endif %}
+
+<a href="/logout">Logout</a>
+
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+<div class="topbar">
+<span>Welcome {{ name }}</span>
+</div>
+
+<div class="page">
+
+{% block content %}{% endblock %}
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CONNECT JAVASCRIPT -->
+<script src="/static/app.js"></script>
+
+</body>
+</html>

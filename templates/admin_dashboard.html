@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+
+<h2>🛠 Admin Control Panel</h2>
+
+<!-- ================= ADD STUDENT ================= -->
+
+<h3>Add Student</h3>
+
+<input id="studentName" placeholder="Student Name">
+<input id="studentEmail" placeholder="Student Email">
+
+<button onclick="addStudent()">Add Student</button>
+
+<hr>
+
+<!-- ================= ASSIGN INSTRUCTOR ================= -->
+
+<h3>Assign Instructor To Course</h3>
+
+<input id="instructorId" placeholder="Instructor ID">
+<input id="courseId" placeholder="Course ID">
+
+<button onclick="assignInstructor()">Assign Instructor</button>
+
+<hr>
+
+<!-- ================= VIEW USERS ================= -->
+
+<h3>All Users</h3>
+
+<button onclick="loadUsers()">Load Users</button>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Role</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="userList"></tbody>
+</table>
+
+<hr>
+
+<!-- ================= VIEW COURSES ================= -->
+
+<h3>All Courses</h3>
+
+<button onclick="loadCourses()">Load Courses</button>
+
+<table>
+<thead>
+<tr>
+<th>Course Title</th>
+<th>Duration</th>
+<th>Level</th>
+</tr>
+</thead>
+
+<tbody id="courseList"></tbody>
+</table>
+
+</div>
+
+{% endblock %}
