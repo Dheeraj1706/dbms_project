@@ -10,7 +10,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", "change-me-in-production")
-CORS(app, resources={r"/*": {"origins": "https://coursehub-nine.vercel.app"}})  # Enable CORS for React frontend
+CORS(app)  # Enable CORS for React frontend
 
 def require_admin(user_id):
     """Verify user has administrator role. Returns (ok, error_response)."""
